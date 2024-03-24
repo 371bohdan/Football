@@ -1,0 +1,444 @@
+/* Завантаження шрифтів з Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(to right, rgb(223, 164, 38), rgb(211, 175, 98));
+    
+}
+
+header {
+    background-color: rgb(44, 43, 43);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Рівномірно розподіляє простір між елементами */
+    border: 2px solid;
+}
+
+
+header>h1{
+    margin-left: 3%;
+    font-family: "Brush Script MT", cursive;
+    font-size: 30px;
+    color: #f3f160;
+    display: flex; /* Замінюємо на flex для використання flex-grow */
+    align-items: center; /* Вирівнюємо елементи вертикально */
+     /* Елемент буде займати весь доступний простір */
+    /* animation: blink-shadow 3s infinite; */
+}
+
+header>.buttons-block {
+    position: relative;
+    display: inline-flex; /* Змінено з inline-block на inline-flex */
+}
+
+
+header>.buttons-block>.dropbtn{
+    background-color: rgb(44, 43, 43);
+    color: white;
+    padding: 16px;
+    font-size: 26px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+header>.buttons-block>.dropbtn:hover{
+    color: rgb(209, 85, 105);
+}
+
+
+header > .special-buttons {
+    display: flex; /* Використовуємо flex */
+    align-items: center; /* Вирівнюємо елементи вертикально */
+    justify-content: flex-end; /* Розміщуємо елементи всередині вправо */
+    background-color: rgb(44, 43, 43);
+    margin-right: 3%;
+}
+
+
+header > .special-buttons > .special-button {
+    margin: 0 1% 0 10%;
+    padding: 7px 15px; /* Збільште значення padding за потреби */
+    background-color: rgb(49, 182, 49);
+    border: outset 2px rgb(49, 182, 49);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 7px;
+    color: white;
+}
+
+
+header > .special-buttons> .special-button:active {
+    border-style: inset;
+    transform: translateX(1px);
+}
+
+header > .special-buttons> .special-button:hover {
+    border-color: rgb(25, 170, 25);
+    background-color: rgb(25, 170, 25);
+}
+
+
+
+/* end header*/
+
+/* Start main */
+
+main {
+    display: flex;
+    justify-content: center; /* Вирівнюємо елементи по центру по вертикалі */
+    align-items: center; /* Вирівнюємо елементи по центру по горизонталі */
+    background: linear-gradient(to right, rgb(44, 43, 43), rgb(116, 114, 114));
+    color: #ffffff;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    height: 40vh;
+    
+}
+
+main > .odd {
+    align-items: center; /* Вирівнюємо елементи по центру по горизонталі */
+}
+
+main>.odd>h1{
+    text-align: center;
+    font-family: Monaco;
+}
+main>.odd>h2{
+    text-align: center;
+    margin: 2% 0 2% 0;
+}
+
+main>.picture {
+    display: flex; /* Додаємо flex-контейнер */
+    justify-content: center; /* Вирівнюємо елементи по центру по горизонталі */
+    align-items: center; /* Вирівнюємо елементи по центру по вертикалі */
+    position: relative; /* Встановлюємо позицію контейнера як relative */
+}
+
+main>.picture>img {
+    max-width: 100%; /* Встановлюємо максимальну ширину зображення відносно розміру батьківського контейнера */
+    height: auto; /* Автоматично обчислюємо висоту для збереження пропорцій */
+}
+
+main>.odd>.button-free{
+    display: block;
+    margin: 5% auto 0 auto;
+    padding: 10px 20px; /* Збільште значення padding за потреби */
+    background-color: rgb(49, 182, 49);
+    border: outset 2px rgb(49, 182, 49);
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 7px;
+    color: white;
+    position: relative;
+}
+
+main>.odd>.button-free:active{
+    border-style: inset;
+    transform: translateX(1px);
+}
+
+main>.odd>.button-free:hover{
+    border-color: rgb(25, 170, 25);
+    background-color: rgb(25, 170, 25);
+}
+
+/* End main */
+
+/* Start footer */
+
+footer {
+    background: linear-gradient(to right, rgb(223, 164, 38), rgb(211, 175, 98));
+    color: #ffffff;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+footer h1{
+    font-size: 35px;
+    margin-top:1%;
+}
+
+footer h2{
+    font-size: 20px;
+    width: 50%;
+    margin: 1% auto;
+}
+
+footer h1, footer h2{
+    text-align: center;
+}
+
+footer > .block-balls {
+    display: flex;
+}
+
+footer > .block-balls > .ball-start {
+    width: 33.3%;
+}
+footer > .block-balls > .rocket-ball {
+    width: 33.3%;
+}
+
+footer > .block-balls > .wise-ball {
+    width: 33.3%;
+}
+
+
+footer > .block-balls > div {
+    width: auto; /* Фіксована ширина для кожного блоку малюнка */
+    height: auto; /* Фіксована висота для кожного блоку малюнка */
+    text-align: center; /* Вирівнюємо текст по центру */
+}
+
+footer > .block-balls img {
+    display: block;
+    margin: 5% auto 0 auto;
+    background-color: rgb(49, 182, 49);
+    border-radius: 5px;
+    border: 2px rgb(21, 126, 21);
+    width: 50%; /* Змінено максимальну ширину на 100% */
+    height: 70%; /* Змінено максимальну висоту на автоматичну, щоб зберігати пропорції */
+    border: 2px solid rgb(21, 126, 21); /* Додавання рельєфності за допомогою рамки */
+    box-shadow: 0 14px 16px rgba(0, 0, 0, 0.5); /* Додавання тіні */
+    cursor: pointer;
+}
+
+
+footer > .block-balls img:hover {
+    opacity: 0.8; /* Зміна прозорості зображення при наведенні */
+    border-color: rgb(39, 81, 173); /* Зміна кольору рамки при наведенні */
+    box-shadow: 0 14px 16px rgba(0, 0, 0, 0.8); /* Зміна тіні при наведенні */
+    
+}
+
+footer > .block-balls>div>div {
+    font-size: 25px;
+    margin: 5% auto 0 auto;
+}
+
+
+/* End footer */
+
+
+
+/*Animation*/
+
+@keyframes wave{
+    0%{
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    50%{
+        width: 120%;
+        height: 140%;
+        opacity: 1;
+    }
+    100%{
+        width: 140%;
+        height: 160%;
+        opacity: 0;
+    }
+}
+
+
+.button-free::before,
+.button-free::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    border-radius: inherit;
+    /* background: inherit; */
+    box-shadow: 
+    2px 2px 6px #71dd5c, 
+    -2px -2px 6px #83da61;
+    /* inset 2px 2px 6px #71dd5c, 
+    inset -2px -2px 6px #83da61; */
+    animation: wave 3s linear infinite;
+    opacity: 0;
+    transition: 0.3s; 
+}
+
+.button-free::after{
+    animation-delay: 1.5s;
+}
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 900px){
+    header>.buttons-block>.dropbtn{
+        font-size: 1.2em;
+    }
+    main>.odd{
+        margin-left: 5%;
+        font-size: 0.9em;
+    }
+    main>.odd{
+        margin-left: 5%;
+        font-size: 0.9em;
+    }
+    main>.odd>.button-free{
+        margin: 5% auto 0 auto;
+    }
+
+    footer h1{
+        font-size: 1.2em;
+    }
+    footer h2{
+        font-size: 1em;
+    }
+}
+
+
+/* Для середніх мобільних пристроїв */
+@media only screen and (min-width: 361px) and (max-width: 768px) {
+
+    header>h1{
+        font-size: 25px;
+        max-width: 70%;
+    }
+
+    header>.buttons-block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Вирівнюємо елементи вертикально вліво */
+    }
+
+    header>.buttons-block>.dropbtn{
+        font-size: 0.9em;
+    }
+
+    header>.special-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Вирівнюємо елементи вертикально вліво */
+    }
+    header > .special-buttons > .special-button:not(:first-child){
+        margin-top: 15%;
+    }
+
+    main>.odd{
+        margin-left: 7%;
+        font-size: 0.8em;
+    }
+
+    main>.odd>.button-free{
+        margin: 15% auto 0 auto;
+    }
+
+    footer>h1{
+        font-size: 1.5em;
+    }
+    footer>h2{
+        display: none;
+    }
+
+    footer > .block-balls>div>div {
+        font-size: 1.25em;
+        text-align: center;
+    }
+}
+
+
+/* Для маленьких мобільних пристроїв */
+@media only screen and (max-width: 360px) {
+    header>h1{
+        font-size: 1em;
+    }
+
+    header>.buttons-block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Вирівнюємо елементи вертикально вліво */
+    }
+
+    header>.buttons-block>.dropbtn{
+        font-size: 0.7em;
+    }
+
+    header>.special-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Вирівнюємо елементи вертикально вліво */
+        font-size: 0.7em;
+    }
+
+    header > .special-buttons > .special-button:not(:first-child){
+        margin-top: 15%;
+    }
+
+    main>.odd{
+        margin-left: 7%;
+        font-size: 0.65em;
+    }
+
+    main>.odd>h2{
+        display: none;
+    }
+
+    main>.odd>.button-free{
+        margin: 25% auto 0 auto;
+    }
+
+    footer>h1{
+        font-size: 1.5em;
+    }
+    footer>h2{
+        display: none;
+    }
+
+    footer > .block-balls>div>div {
+        font-size: 1.25em;
+        text-align: center;
+    }
+    footer > .block-balls{
+        margin-top: 5%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
